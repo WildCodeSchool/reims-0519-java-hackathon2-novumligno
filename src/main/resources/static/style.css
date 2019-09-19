@@ -10,9 +10,15 @@ body{
     background-position: center;
 }
 
+.titre{
+    font-size: 20px;
+    font-style: bold;
+}
+
 .btn-primary{
     background-color: rgb(241, 185, 28);
     margin-top: 350px; 
+    color: dimgray;
 }
 
 img{
@@ -22,7 +28,7 @@ img{
 
 span{
     padding: 20px;
-    color: white;
+    color: dimgray;
 }
 
 
