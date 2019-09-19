@@ -8,8 +8,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    scroll-behavior: smooth;
+  
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
 .titre{
     font-size: 20px;
     font-style: bold;
