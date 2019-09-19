@@ -13,13 +13,13 @@ public class Company {
 
     }
 
-    public Company(String name, String filial, String logo, String mission, String address, String website){
+    public Company(String name, String logo, String mission, String address, String website, String filial){
         this.name = name;
-        this.filial = filial;
         this.logo = logo;
         this.mission = mission;
         this.address = address;
         this.website = website;
+        this.filial = filial;
 
     }
 
@@ -28,11 +28,11 @@ public class Company {
     @Column(name = "id")
     private Long id;
     private String name;
-    private String filial;
     private String logo;
     private String mission;
     private String address;
     private String website;
+    private String filial;
     
 
 
