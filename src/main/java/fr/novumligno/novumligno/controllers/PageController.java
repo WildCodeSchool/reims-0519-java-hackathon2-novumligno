@@ -12,9 +12,4 @@ class PageController {
         return "home";
     }
 
-    @GetMapping("/partners")
-    public String partenaires(Model model){
-        return "partners";
-    }
-
 }
