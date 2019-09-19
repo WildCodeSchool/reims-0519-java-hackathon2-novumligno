@@ -107,7 +107,7 @@ polygon {
 /*Page Partenaires*/
 
 .backpart{
-  background-image: linear-gradient(rgba(170, 70, 0, 0.8), rgba(90, 40, 0, 0.8)),
+  background-image: linear-gradient(rgba(122, 49, 0, 0.74), rgba(58, 26, 1, 0.836), rgba(34, 16, 0, 0.904)),
   url("https://image.freepik.com/vecteurs-libre/arbre-brun-racines-plat-illustration-vectorielle-isole_98292-3060.jpg");
   background-size: 100% 100%;
 }
