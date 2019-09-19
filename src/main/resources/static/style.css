@@ -21,6 +21,10 @@ body{
     color: dimgray;
 }
 
+.btn-primary:hover{
+    background-color: #996d2e;
+}
+
 img{
     width: 25%;
     height: 25%;
