@@ -22,8 +22,12 @@ body{
 }
 
 img{
-    width: 25%;
+    width: auto;
     height: 25%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 span{
@@ -98,4 +102,16 @@ polygon {
   } to {
     transform: translateY(-6px);
   }
+}
+
+/*Page Partenaires*/
+
+.backpart{
+  background-image: linear-gradient(rgba(170, 70, 0, 0.8), rgba(90, 40, 0, 0.8)),
+  url("https://image.freepik.com/vecteurs-libre/arbre-brun-racines-plat-illustration-vectorielle-isole_98292-3060.jpg");
+  background-size: 100% 100%;
+}
+
+.grey{
+  color: lightgray;
 }

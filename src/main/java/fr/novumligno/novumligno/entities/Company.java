@@ -13,8 +13,9 @@ public class Company {
 
     }
 
-    public Company(String name, String logo, String mission, String address, String website){
+    public Company(String name, String filial, String logo, String mission, String address, String website){
         this.name = name;
+        this.filial = filial;
         this.logo = logo;
         this.mission = mission;
         this.address = address;
@@ -27,6 +28,7 @@ public class Company {
     @Column(name = "id")
     private Long id;
     private String name;
+    private String filial;
     private String logo;
     private String mission;
     private String address;
@@ -116,6 +118,21 @@ public class Company {
      */
     public void setWebsite(String website) {
         this.website = website;
+    }
+
+
+    /**
+     * @return String return the filial
+     */
+    public String getFilial() {
+        return filial;
+    }
+
+    /**
+     * @param filial the filial to set
+     */
+    public void setFilial(String filial) {
+        this.filial = filial;
     }
 
 }
