@@ -7,7 +7,7 @@ import fr.novumligno.novumligno.entities.Company;
 import fr.novumligno.novumligno.repositories.CompanyRepository;;
 
 @Component
-public class Outputter implements CommandLineRunner {
+public class CompanyOutputter implements CommandLineRunner {
 
     @Autowired
     private CompanyRepository companyRepository;
