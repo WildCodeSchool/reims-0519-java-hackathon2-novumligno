@@ -1,0 +1,89 @@
+html{
+    background-color: grey;
+}
+
+
+header{
+    background-image: linear-gradient(30deg, rgba(14, 150, 168, 0.89), rgb(122, 199, 230)); 
+    margin-top: -7px;
+}
+
+img{
+    width: 15%;
+    height: 15%;
+    padding: 10px;
+}
+
+span{
+    padding: 20px;
+    color: white;
+}
+
+
+svg {
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+}
+  
+polygon {
+    stroke-width: 1;
+  }
+
+.green-lighter {
+  background: #a5df66;
+  fill: #a5df66;
+  stroke: #a5df66;
+}
+.green-light {
+  background: #79b544;
+  fill: #79b544;
+  stroke: #79b544;
+}
+.green-norm {
+  background: #619b37;
+  fill: #619b37;
+  stroke: #619b37;
+}
+.green-dark {
+  background: #54892f;
+  fill: #54892f;
+  stroke: #54892f;
+}
+.green-darker {
+  background: #3c6720;
+  fill: #3c6720;
+  stroke: #3c6720;
+}
+.brown-light {
+  background: #d5bc79;
+  fill: #d5bc79;
+}
+.brown-dark {
+  background: #996d2e;
+  fill: #996d2e;
+}
+
+#cloud1 {
+  animation: bounce1 2s ease-in-out 0s infinite alternate;
+}
+
+#cloud2 {
+  animation: bounce2 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounce1 {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes bounce2 {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(-6px);
+  }
+}
