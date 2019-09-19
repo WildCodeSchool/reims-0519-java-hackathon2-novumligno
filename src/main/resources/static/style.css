@@ -1,10 +1,10 @@
 header{
-    background-color: rgb(241, 185, 28); 
+    background-color: rgb(240, 189, 51); 
     margin-top: -7px;
 }
 
 body{
-    background-image: linear-gradient(180deg,rgb(94, 185, 221), rgb(5, 145, 210), rgba(122, 56, 12, 65%));
+    background-image: linear-gradient(180deg,rgb(110, 188, 219),rgb(49, 155, 204), rgba(122, 56, 12, 65%));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -16,7 +16,7 @@ body{
 }
 
 .btn-primary{
-    background-color: rgb(241, 185, 28);
+    background-color: rgb(240, 189, 51);
     margin-top: 350px; 
     color: dimgray;
 }
