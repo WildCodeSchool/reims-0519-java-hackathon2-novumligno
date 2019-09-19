@@ -1,0 +1,101 @@
+header{
+    background-color: rgb(240, 189, 51); 
+    margin-top: -7px;
+}
+
+body{
+    background-image: linear-gradient(180deg,rgb(110, 188, 219),rgb(49, 155, 204), rgba(122, 56, 12, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.titre{
+    font-size: 20px;
+    font-style: bold;
+}
+
+.btn-primary{
+    background-color: rgb(240, 189, 51);
+    margin-top: 350px; 
+    color: dimgray;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+}
+
+span{
+    padding: 20px;
+    color: dimgray;
+}
+
+
+svg {
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+}
+  
+polygon {
+    stroke-width: 1;
+  }
+
+.green-lighter {
+  background: #a5df66;
+  fill: #a5df66;
+  stroke: #a5df66;
+}
+.green-light {
+  background: #79b544;
+  fill: #79b544;
+  stroke: #79b544;
+}
+.green-norm {
+  background: #619b37;
+  fill: #619b37;
+  stroke: #619b37;
+}
+.green-dark {
+  background: #54892f;
+  fill: #54892f;
+  stroke: #54892f;
+}
+.green-darker {
+  background: #3c6720;
+  fill: #3c6720;
+  stroke: #3c6720;
+}
+.brown-light {
+  background: #d5bc79;
+  fill: #d5bc79;
+}
+.brown-dark {
+  background: #996d2e;
+  fill: #996d2e;
+}
+
+#cloud1 {
+  animation: bounce1 2s ease-in-out 0s infinite alternate;
+}
+
+#cloud2 {
+  animation: bounce2 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounce1 {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes bounce2 {
+  from {
+    transform: translateY(0px);
+  } to {
+    transform: translateY(-6px);
+  }
+}
