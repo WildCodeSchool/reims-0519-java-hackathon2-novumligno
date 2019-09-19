@@ -1,7 +1,5 @@
 package fr.novumligno.novumligno.utils;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -11,23 +9,38 @@ import fr.novumligno.novumligno.repositories.CompanyRepository;;
 @Component
 public class Outputter implements CommandLineRunner {
 
-    private Logger LOG = LoggerFactory.getLogger("Wilder");
-
     @Autowired
     private CompanyRepository companyRepository;
 
     @Override
     public void run(String... args) throws Exception {
 
-        // Checke combien d'objets se trouvent dans la BDD        
-        LOG.info("******************");
-        LOG.info("Objects in DB : " + companyRepository.count());
 
-        // Crée un nouvel utilisateur et l'enregistre dans la BDD
-        Company Company1 = new Company("TerraSolis", "Wildeuse", 19);
-        LOG.info("******************");
-        LOG.info(Company1 + " has been created !");
-        companyRepository.save(Company1);
-        LOG.info(Company1 + " has been saved !");
+        String[][] data = new String[][]{
+            {
+                "TerraSolis",
+                "https://png.pngtree.com/png-clipart/20190515/original/pngtree-coffee-time-png-image_3626459.jpg",
+                "Association de promotion de la multifonctionnalité via l'émergence d'innovations agricoles en Grand Est",
+                "Complexe agricole du Mont Bernard, Route de Suippes, 51000 Châlons-en-Champagne",
+                "http://terrasolis.fr/"
+            },
+            {   
+                "Chambre d'agriculture de la marne",
+                "https://png.pngtree.com/png-clipart/20190515/original/pngtree-coffee-time-png-image_3626459.jpg", "Organisation consulaire de représentation des agriculteurs portant des actions de développement / Marne",
+                "Complexe agricole du Mont Bernard, Route de Suippes, 51000 Châlons-en-Champagne",
+                "https://marne.chambre-agriculture.fr/"
+            },
+            {
+                "Soufflet",
+                "https://png.pngtree.com/png-clipart/20190515/original/pngtree-coffee-time-png-image_3626459.jpg", "Organisation consulaire de représentation des agriculteurs portant des actions de développement / Marne",
+                "Organisation consulaire de représentation des agriculteurs portant des actions de développement / Marne",
+                "https://www.soufflet.com"
+            },
+
+        };
+        for(String[] companyData : data) {
+            Company company = new Company(companyData[0], companyData[1], companyData[2], companyData[3], companyData[4]);
+            companyRepository.save(company);
+        }
     }    
 }
