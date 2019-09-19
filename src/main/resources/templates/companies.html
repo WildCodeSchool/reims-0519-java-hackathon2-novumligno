@@ -16,7 +16,7 @@
 <body class="backpart">
   <h1 class="d-flex justify-content-center mt-5 grey">Nos Partenaires</h1>
 
-  <div th:each="company : ${companies}">
+  <div th:class="${company.name}" th:each="company : ${companies}">
     <button type="button" class="btn btn-primary" data-toggle="modal" th:data-target="|#company${company.id}|">
       Launch demo modal
     </button>
@@ -37,9 +37,11 @@
           </div>
           <div class="modal-body" th:text="${company.mission}">
           </div>
+          <div class="modal-body" th:text="${company.filial}">
+          </div>
           <div class="modal-footer">
             <p>
-              <a class="btn btn-primary">
+              <a class="btn btn-primary" th:href="${company.address}">
                 Adresse
               </a>
               <a class="btn btn-primary" th:href="${company.website}">
