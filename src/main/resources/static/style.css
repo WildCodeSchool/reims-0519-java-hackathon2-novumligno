@@ -10,6 +10,11 @@ body{
     background-position: center;
 }
 
+.btn-primary{
+    background-color: rgb(241, 185, 28);
+    margin-top: 350px; 
+}
+
 img{
     width: 25%;
     height: 25%;
