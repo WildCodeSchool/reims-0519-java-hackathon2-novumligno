@@ -1,17 +1,18 @@
-html{
-    background-color: grey;
-}
-
-
 header{
-    background-image: linear-gradient(30deg, rgba(14, 150, 168, 0.89), rgb(122, 199, 230)); 
+    background-color: rgb(241, 185, 28); 
     margin-top: -7px;
 }
 
+body{
+    background-image: linear-gradient(180deg,rgb(94, 185, 221), rgb(5, 145, 210), rgba(122, 56, 12, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 img{
-    width: 15%;
-    height: 15%;
-    padding: 10px;
+    width: 25%;
+    height: 25%;
 }
 
 span{
