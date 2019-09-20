@@ -54,7 +54,7 @@ public class CompanyOutputter implements CommandLineRunner {
             },
              {
                 "Vivescia",
-                "https://www.vivescia.com/sites/all/themes/custom_ins/logo.svg",
+                "https://image.noelshack.com/fichiers/2019/38/5/1568937466-pngtree-creative-company-logo-1421161.png",
                 "Coopérative agricole engagée dans la première transformation",
                 "https://goo.gl/maps/FPAm24YPKCYTrKSV8",
                 "https://www.vivescia.com",
@@ -120,7 +120,7 @@ public class CompanyOutputter implements CommandLineRunner {
                 "RITTMO",
                 "https://pbs.twimg.com/profile_images/3111793661/12b17c1a7835e3a959b9508b83ecd3a4_400x400.jpegs",
                 "Centre de recherche spécialisé dans les domaines de la fertilisation et de l’agroenvironnement",
-                "https://goo.gl/maps/WAQ5wWJxLxNf4NTa8",
+                "https://image.noelshack.com/fichiers/2019/38/5/1568937466-pngtree-creative-company-logo-1421161.png",
                 "https://www.rittmo.com/",
                 "Fertilisants"
             },  
@@ -128,7 +128,7 @@ public class CompanyOutputter implements CommandLineRunner {
                 "CIVC",
                 "https://www.champagne.fr/assets/img/logo-civc.svg",
                 "Interprofession rassemblant les vignerons et maisons de Champagne pour le développement économique, technique, environnementale de la filière",
-                "https://goo.gl/maps/htiTar6karscvPR26",
+                "https://image.noelshack.com/fichiers/2019/38/5/1568937466-pngtree-creative-company-logo-1421161.png",
                 "https://www.champagne.fr/",
                 "Viticulture"
             },  
@@ -174,7 +174,7 @@ public class CompanyOutputter implements CommandLineRunner {
             },
             {
                 "ARTECHDRONE",
-                "https://www.artechdrone.fr/wp-content/uploads/2017/01/Logo-Artechdrone-horizontal-250.png",
+                "https://image.noelshack.com/fichiers/2019/38/5/1568937466-pngtree-creative-company-logo-1421161.png",
                 "Entreprise de drone (formation, vol…)",
                 "https://goo.gl/maps/j4GBwk2rf7QsFPo56",
                 "https://www.artechdrone.fr/",

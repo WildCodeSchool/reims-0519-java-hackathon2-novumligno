@@ -1,61 +1,63 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="fr">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" th:href="@{/style.css}" href="../static/style.css">
-    <title>Terrasolis</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    <div class="home">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" th:href="@{/style.css}" href="../static/style.css">
+  <title>Terrasolis</title>
+</head>
+
+<body>
+  <div class="home">
     <header class="d-flex justify-content-between mb-3 sticky-top">
 
-        <span class="titre">L'annuaire de nos adhérents</span>
-        <span>Nos projets</span>
- 
+      <span class="titre">L'annuaire de nos adhérents</span>
+      <span>Nos projets</span>
+
     </header>
 
     <div class="text-center">
       <img src="../static/img/terrasolis.png" th:src="@{img/terrasolis.png}" alt="logo terrasolis">
     </div>
-      
+
     <svg height="300px" width="400px" id="cloud1">
-        <polygon points="72,47 117,48 134,68 124,74 82,74 50,68" fill="white" />
-        <polygon points="92,60 134,68 124,74 82,74 50,68" fill="#f2f2f2" />
+      <polygon points="72,47 117,48 134,68 124,74 82,74 50,68" fill="white" />
+      <polygon points="92,60 134,68 124,74 82,74 50,68" fill="#f2f2f2" />
     </svg>
-      
+
     <svg height="300px" width="400px" id="cloud2">
       <polygon points="282,137 347,148 354,168 284,184 260,170 250,148" fill="white" />
       <polygon points="354,168 284,184 260,170 250,148" fill="#f1f1f1" />
       <polygon points="354,168 284,184 320,162" fill="#eaeaea" />
     </svg>
-    
+
     <svg height="300px" width="400px">
       <ellipse cx="188" cy="273" rx="80" ry="20" style="fill:url(#shadow);opacity:0.3;" />
       <ellipse cx="188" cy="273" rx="24" ry="5" style="fill:url(#shadow);" />
       <polygon points="182,211 187,211 187,274 180,274" fill="url(#trunkgrad)" />
       <polygon points="187,211 196,211 198,274 187,274" class="brown-dark" />
-      
+
       <polygon points="187,28 154,162 116,159" class="green-lighter" />
       <polygon points="154,162 116,159 155,218" class="green-light" />
-      
+
       <polygon points="187,28 216,114 154,162" class="green-norm" />
       <polygon points="187,28 216,114 264,162 204,28" class="green-norm" />
       <polygon points="216,114 264,162 223,210" class="green-dark" />
       <polygon points="216,114 223,210 154,162" style="fill:#5c9433" />
-      
+
       <polygon points="154,162 223,210 188,211" class="green-darker" />
       <polygon points="154,162 188,211 155,218" class="green-darker" />
-      
+
       <polygon points="200,70 216,114 185,137" class="green-light" />
       <polygon points="216,114 220,167 185,137" style="fill:#588f32" />
       <polygon points="216,114 250,148 220,167" style="fill:#598d33" />
-      
+
       <linearGradient id="trunkgrad" x1="0%" y1="0%" x2="0%" y2="100%">
         <stop offset="0%" style="stop-color:#996d2e;stop-opacity:1" />
         <stop offset="100%" style="stop-color:#d5bc79;stop-opacity:1" />
@@ -63,20 +65,67 @@
     </svg>
 
     <div class="d-flex justify-content-center">
-      <a type="button" class="btn btn-primary" href="#partners">Découvrez les</a>
+      <a type="button" class="btn btn-primary" href="#companies">Découvrez les</a>
     </div>
+  </div>
+
+  <section class="backpart">
+
+    <h1 class="d-flex justify-content-center mt-5 grey">Nos Partenaires</h1>
+
+    <div id="companies" th:class="${company.name}" th:each="company : ${companies}">
+      <button type="button" id="ical" class="zoom btn-white" data-toggle="modal"
+        th:data-target="|#company${company.id}|">
+        <img class="btn-logo" th:src="${company.logo}">
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" th:id="|company${company.id}|" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="img">
+                <img th:src="${company.logo}" class="img-fluid">
+              </div>
+              <h5 class="modal-title" th:text="${company.name}"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" th:text="${company.mission}">
+            </div>
+            <div class="modal-body" th:text="${company.filial}">
+            </div>
+            <div class="modal-footer">
+              <p>
+                <a class="btn btn-primary" th:href="${company.address}">
+                  Adresse
+                </a>
+                <a class="btn btn-primary" th:href="${company.website}">
+                  Site internet
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <section id="partners" class="backpart"></section>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://kit.fontawesome.com/e30c9325cd.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script href="../static/scroll.js" th:href="@{/scroll.js}"></script>
+</body>
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://kit.fontawesome.com/e30c9325cd.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script href="../static/scroll.js" th:href="@{/scroll.js}"></script>
-  </body>
 </html>
