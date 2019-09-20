@@ -13,12 +13,13 @@ public class Company {
 
     }
 
-    public Company(String name, String logo, String mission, String address, String website){
+    public Company(String name, String logo, String mission, String address, String website, String filial){
         this.name = name;
         this.logo = logo;
         this.mission = mission;
         this.address = address;
         this.website = website;
+        this.filial = filial;
 
     }
 
@@ -31,6 +32,7 @@ public class Company {
     private String mission;
     private String address;
     private String website;
+    private String filial;
     
 
 
@@ -116,6 +118,21 @@ public class Company {
      */
     public void setWebsite(String website) {
         this.website = website;
+    }
+
+
+    /**
+     * @return String return the filial
+     */
+    public String getFilial() {
+        return filial;
+    }
+
+    /**
+     * @param filial the filial to set
+     */
+    public void setFilial(String filial) {
+        this.filial = filial;
     }
 
 }

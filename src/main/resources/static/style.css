@@ -8,8 +8,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    scroll-behavior: smooth;
+  
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
 .titre{
     font-size: 20px;
     font-style: bold;
@@ -26,8 +32,12 @@ body{
 }
 
 img{
-    width: 25%;
+    width: auto;
     height: 25%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 span{
