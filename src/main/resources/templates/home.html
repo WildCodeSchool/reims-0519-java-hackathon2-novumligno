@@ -88,30 +88,35 @@
               <div class="img">
                 <img th:src="${company.logo}" class="img-fluid">
               </div>
-              <h5 class="modal-title" th:text="${company.name}"></h5>
+              <div class="modal-title mt-5 ml-5">
+                <h5 class="float-center" th:text="${company.name}"></h5>
+              </div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            <br>
+            <p class="annoncement ml-3 mb-3"><i class="fas fa-bookmark"></i> Mission :</p>
             <div class="modal-body" th:text="${company.mission}">
             </div>
+            <hr>
+            <br>
+            <p class="annoncement ml-3 "><i class="fas fa-tractor"></i> Filière :</p>
             <div class="modal-body" th:text="${company.filial}">
             </div>
             <div class="modal-footer">
-              <p>
-                <a class="btn btn-primary" th:href="${company.address}">
-                  Adresse
-                </a>
-                <a class="btn btn-primary" th:href="${company.website}">
-                  Site internet
-                </a>
-              </p>
+              <a class="btn btn-primary" th:href="${company.address}">
+                Adresse
+              </a>
+              <a class="btn btn-primary" th:href="${company.website}">
+                Site internet
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    </div>
   </section>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
