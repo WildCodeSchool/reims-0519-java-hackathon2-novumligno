@@ -16,11 +16,11 @@ class CompanyController {
 @Autowired
 private CompanyRepository companyRepository;
 
-@GetMapping("/companies")
+@GetMapping("/")
 public String company(Model model) {
     List<Company> companies = companyRepository.findAll();
     model.addAttribute("companies", companies);
-    return "companies";
+    return "home";
 }
 
 
