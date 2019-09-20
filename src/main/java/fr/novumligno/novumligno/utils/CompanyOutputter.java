@@ -37,7 +37,7 @@ public class CompanyOutputter implements CommandLineRunner {
                 "Agriculture"
             },
             {   
-                "Chambre d'agriculture de la marne",
+                "CA51",
                 "https://marne.chambre-agriculture.fr/fileadmin/user_upload/Grand-Est/047_Inst_Marne/Interface/logo_ca51.jpg", 
                 "Organisation consulaire de représentation des agriculteurs portant des actions de développement / Marne",
                 "https://goo.gl/maps/hgMxNQ78aymewbBM9",
@@ -118,7 +118,7 @@ public class CompanyOutputter implements CommandLineRunner {
             },  
             {
                 "RITTMO",
-                "https://pbs.twimg.com/profile_images/3111793661/12b17c1a7835e3a959b9508b83ecd3a4_400x400.jpegs",
+                "https://image.noelshack.com/fichiers/2019/38/5/1568937466-pngtree-creative-company-logo-1421161.png",
                 "Centre de recherche spécialisé dans les domaines de la fertilisation et de l’agroenvironnement",
                 "https://image.noelshack.com/fichiers/2019/38/5/1568937466-pngtree-creative-company-logo-1421161.png",
                 "https://www.rittmo.com/",
