@@ -9,7 +9,6 @@ body{
     background-attachment: fixed;
     background-position: center;
     scroll-behavior: smooth;
-  
 }
 
 html{
@@ -117,7 +116,7 @@ polygon {
 /*Page Partenaires*/
 
 .home {
-  height: 100vh;
+height: 100vh;
 }
 
 .backpart{
@@ -131,141 +130,138 @@ polygon {
 section img{
   width: 80px;
   height: 80px;
-  object-fit: contain;
   border-radius: 50%;
 }
-
-section.contain img {
-  object-fit: contain;
+section img:hover{
+  height: 100px;
+  width: 100px; 
 }
-
 .zoom{
   border-radius: 50%;
   border: 2px solid  #582900;
 }
 
-.TerraSolis{
-  position:relative;
-left: 400px
-
+ .TerraSolis{
+  position:absolute;
+  left: 49%;
+  top: 120%;
 }
-
 .CRAGE{
-  position:relative;
-  left: 400px;
-  top: 110px;
+  position:absolute;
+  left: 26%;
 }
-
 .CA51{
-  position:relative;
-  left: 520px;
-  top: 110px;
+  position:absolute;
+  left: 15%;
+  top: 125%;
 }
 
 .Soufflet
 {
-  position:relative;
-  left: 120px;
-  bottom: 30px;
+  position:absolute;
+  left: 4% ;
+  top: 120%;
 }
 .Vivescia{
-  position:relative;
-  bottom: 230px;
-  left: 20px;
+  position:absolute;
+  left: 28% ;
+  top: 130% ;
 
 }
 .Ceresia{
-  position:relative;
-  left: 240px;
+  position:absolute;
+  left: 37% ;
+  top: 120%
 }
 .Cristal{
-  position:relative;
-  left: 1000px;
+  position:absolute;
+  left: 38%;
+  top: 135%;
 }
 .la {
-  position:relative;
-  left: 750px;
+  position:absolute;
+  left: 60% ;
 }
 .CDER{
-  position:relative;
-  left: 500px;
+  position:absolute;
+  left: 81%;
 }
 .IAR{
-    position:relative;
-  bottom: 650px;
-  left: 810px;
+    position:absolute;
+  top: 127%;
+  left: 77%;
 }
 .CREDIT {
-  position:relative;
-  bottom: 580px;
-  left: 1000px;
+  position:absolute;
+  top:  140%;
+  left: 65%;
 
 }
 .Arvalis{
-  position:relative;
-  bottom: 610px;
-  left: 880px;
+  position:absolute;
+  top: 144%;
+  left: 80% ;
 }
 .RITTMO{
-  position:relative;
-  bottom: 500px;
-  left: 580px;
+  position:absolute;
+  top: 160%;
+  left: 80%;
 
 }
 .CIVC{
-  position:relative;
-  bottom: 950px;
-  left: 1000px;
+  position:absolute;
+  top: 154% ;
+  left: 71% ;
 
 }
 .SYNERGIE {
-  position:relative;
-  bottom: 950px;
-  left: 700px;
+  position:absolute;
+  top: 169% ;
+  left: 25% ;
 }
 .ENSAIA{
-  position:relative;
-  bottom: 1150px;
-  left: 170px;
+  position:absolute;
+  top: 170%;
+  left: 17%;
 
 }
 .GRDF{
-  position:relative;
-  bottom: 1400px;
-  left: 980px;
+  position:absolute;
+  top: 178% ;
+  left: 36% ;
 
 }
 .INVIVO{
-  position:relative;
-  bottom: 1370px;
-  left: 610px;
+  position:absolute;
+  top: 170% ;
+  left: 45% ;
 
 }
 .CRESTIC{
-  position:relative;
-  bottom: 1560px;
-  left: 160px;
+  position:absolute;
+  top: 183%;
+  left: 50%;
 
 }
 .ARTECHDRONE{
-   position:relative;
-   bottom: 1050px;
-  left: 400px;
+   position:absolute;
+   top: 139%;
+  left: 20%;
 }
 .EMC2{
-  position:relative;
-  bottom: 1150px;
-  left: 180px;
+  position:absolute;
+  top: 163% ;
+  left: 63%;
 
 }
 .ARYSTA{
-  position:relative;
-  bottom: 1650px;
-  left: 1160px;
+  position:absolute;
+  top: 144%;
+  left: 44%;
 }
 .API-AGRO{
-  position:relative;
-  bottom: 1450px;
-  left: 800px;
+  position:absolute;
+  top:146% ;
+  left: 57%;
 
-}
+} 
