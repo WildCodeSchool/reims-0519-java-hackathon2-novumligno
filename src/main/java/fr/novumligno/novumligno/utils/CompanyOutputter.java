@@ -12,7 +12,7 @@ public class CompanyOutputter implements CommandLineRunner {
     @Autowired
     private CompanyRepository companyRepository;
 
-    @Override
+    
     public void run(String... args) throws Exception {
 
 
